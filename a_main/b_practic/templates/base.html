@@ -1,0 +1,23 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="{% url 'project_one'%}">Project 01</a></li>
+            <li><a href="{% url 'project_two'%}">Project 02</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    {% block content %} {% endblock content %}
+  </body>
+</html>
